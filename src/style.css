@@ -1,0 +1,76 @@
+html, body {
+  font-family: "Lucida Sans Typewriter", "Lucida Console", "Bitstream Vera Sans Mono", monospace;
+  height: 100%;
+}
+
+a:link, a:hover, a:active, a:visited {
+  color: orange;
+}
+
+.typewriter {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  display: table;
+  width: fit-content;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  width: fit-content;
+  animation:
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+#main, #about {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+#about {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%);
+}
+
+#output {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.social li {
+  display: inline-block;
+}
+
+#cryptofy {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#secret {
+  margin-top: 2%;
+}
+
+#secret input, textarea {
+  width: 100%;
+}

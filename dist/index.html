@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf8">
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="Encryptoid" />
+  <meta property="og:description" content="Send secret messages over the decentralized web" />
+  <meta property="og:image" content="./images/shhh.jpg" />
+  <title>Encryptoid ĐApp</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="main">
+    <div class="typewriter">
+      <h1>Encryptoid...</h1></div>
+    Send secret messages over the decentralized web
+    <form id="secret">
+      <label for="message">Message</label>
+      <textarea id="message" required placeholder="Super secret message" rows="5"></textarea>
+      <label for="password">Password</label>
+      <input id="password" type="text" required minlength="10" maxlength="100" placeholder="Super secret password" title="Should be at least 10 characters. Multiple words (e.g. correct horse battery staple) are best.">
+    </form>
+    <button id="cryptofy" type="button" style="visibility: hidden;">Encrypt</button>
+    <div id="output"></div>
+  </div>
+  <div id="about">
+    <ul class="social">
+      <li>
+        <a href="https://github.com/textileio/" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="linkable" href="https://twitter.com/home?status=I%20just%20sent%20a%20secret%20message%20over%20the%20decentralized%20web!%20" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="linkable" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="linkable" href="mailto:?&subject=Encryptoid!&body=I%20just%20sent%20a%20secret%20message%20over%20the%20decentralized%20web!%20" target="_blank">
+          <i class="fas fa-at"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://medium.com/textileio" target="_blank">
+          <i class="fab fa-medium"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script type="text/javascript" src="bundle.js"></script>
+</body>
+
+</html>
