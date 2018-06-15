@@ -21,9 +21,8 @@ const setup = async () => {
   }
   try {
     ipfs = await getIpfs()
-    ipfs.swarm.connect(
-      '/dns4/BrowserConnector-2058342286.us-east-1.elb.amazonaws.com/tcp/443/wss/ipfs/QmPYxbNHdCN3ervZobHSDrN9v9XkzUL8QxDJSpATJLCwki'
-    )
+    const addr = '/dns4/ipfs.carsonfarmer.com/tcp/9999/ws/ipfs/QmQqBfDcAre7CaTMmMzHqnrHPxX3xVT5D5GaiHh4zppTL7'
+    const success = await ipfs.swarm.connect(addr)
     // Show button when ready
     if (isDecrypting) {
       button.innerHTML = 'Decrypt'
