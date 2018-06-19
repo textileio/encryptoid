@@ -52,7 +52,7 @@ a:link, a:hover, a:active, a:visited {
   transform: translate(-50%);
 }
 
-#output {
+#output, #waiting {
   text-align: center;
   margin-top: 1em;
 }

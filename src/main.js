@@ -21,7 +21,8 @@ const setup = async () => {
   }
   try {
     ipfs = await getIpfs()
-    const addr = '/dns4/ipfs.carsonfarmer.com/tcp/9999/ws/ipfs/QmQqBfDcAre7CaTMmMzHqnrHPxX3xVT5D5GaiHh4zppTL7'
+    const addr = '/dns4/ipfs.carsonfarmer.com/tcp/4002/wss/ipfs/Qmf6Wp6McAKm5oRYUPndLaAs5tnADASyJJZ3HkhzPmJJvY'
+    // Bootstrapping our Dapp, normally we don't need this extra step
     const success = await ipfs.swarm.connect(addr)
     // Show button when ready
     if (isDecrypting) {
@@ -30,6 +31,7 @@ const setup = async () => {
       const content = file.content.toString('base64')
       document.getElementById('message').value = content
     }
+    document.getElementById('waiting').style.visibility = 'hidden'
     button.style.visibility = 'visible'
     button.addEventListener('click', (e) => {
       output.innerHTML = ''
@@ -51,16 +53,19 @@ const setup = async () => {
                 const info = `Your super secret message is:
                 `
                 const msg = `${plaintext.toString('utf-8')}`
+                const create = `<br/><a href="${base}">create your own...</a>`
                 output.innerText = info + '"' + msg + '"'
+                output.innerHTML = output.innerHTML + create
               }
             })
           } else {
             cipher.encrypt(Buffer.from(message.value), async (err, encrypted) => {
               if (!err) {
                 const hashed = (await ipfs.files.add(encrypted))[0]
-                const info = `Send the following link to your recipient, and get social down below:<br/><br/>`
+                const info = `Send the following link to your recipient:<br/><br/>`
                 const msg = `<a href="${base}?cid=${hashed.hash}">${hashed.hash}</a>`
                 output.innerHTML = info + msg
+                await fetch(`${window.location.origin}/ipfs/${hashed.hash}`)
               }
             })
           }
