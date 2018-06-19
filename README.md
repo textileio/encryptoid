@@ -4,9 +4,9 @@
 
 Its almost impossible to share digital information without leaving a trace. Almost. This ĐApp allows you to create emphemeral secret messages, encode them with industry standard encryption algoritms, and share them with friends... until the messages disappear _forever_.
 
-## IPFS CID Hash
+## Content Address
 
-The dist folder should hash to `QmTTUfKycTRp6e1Fuc8PYpjyEopy5h9nmLnk33C22w3inN`, so you know you're accessing the code hosted here when you access it over a public IPFS gateway: [/ipfs/QmTTUfKycTRp6e1Fuc8PYpjyEopy5h9nmLnk33C22w3inN](https://ipfs.carsonfarmer.com/ipfs/QmTTUfKycTRp6e1Fuc8PYpjyEopy5h9nmLnk33C22w3inN)
+The dist folder should hash to `QmdGrAGjJaDxdZC3vRs97S6scrSG1tdXzdoVMvdb2N5Vn5`, so you know you're accessing the code hosted here when you access it over a public IPFS gateway: [/ipfs/QmdGrAGjJaDxdZC3vRs97S6scrSG1tdXzdoVMvdb2N5Vn5](https://ipfs.carsonfarmer.com/ipfs/QmdGrAGjJaDxdZC3vRs97S6scrSG1tdXzdoVMvdb2N5Vn5)
 
 
 ## Install
