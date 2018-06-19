@@ -4,6 +4,11 @@
 
 Its almost impossible to share digital information without leaving a trace. Almost. This ĐApp allows you to create emphemeral secret messages, encode them with industry standard encryption algoritms, and share them with friends... until the messages disappear _forever_.
 
+## IPFS CID Hash
+
+The dist folder should hash to `QmTTUfKycTRp6e1Fuc8PYpjyEopy5h9nmLnk33C22w3inN`, so you know you're accessing the code hosted here when you access it over a public IPFS gateway: [/ipfs/QmTTUfKycTRp6e1Fuc8PYpjyEopy5h9nmLnk33C22w3inN](https://ipfs.carsonfarmer.com/ipfs/QmTTUfKycTRp6e1Fuc8PYpjyEopy5h9nmLnk33C22w3inN)
+
+
 ## Install
 
 1.  This app works best with `window.ipfs`. Install the IPFS Companion web extension:
@@ -18,6 +23,6 @@ Its almost impossible to share digital information without leaving a trace. Almo
 
 Instead of steps 3 & 4: `yarn watch`
 
-### Thanks
+### Tutorial
 
-Built using the steps outlined in [this blog post]().
+Built using the steps outlined in [this blog post](https://medium.com/textileio/building-an-interplanetary-đapp-from-scratch-51f9b8be5a74).
