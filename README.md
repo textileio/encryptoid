@@ -6,7 +6,7 @@ Its almost impossible to share digital information without leaving a trace. Almo
 
 ## Content Address
 
-The dist folder should hash to `QmdGrAGjJaDxdZC3vRs97S6scrSG1tdXzdoVMvdb2N5Vn5`, so you know you're accessing the code hosted here when you access it over a public IPFS gateway: [/ipfs/QmdGrAGjJaDxdZC3vRs97S6scrSG1tdXzdoVMvdb2N5Vn5](https://ipfs.carsonfarmer.com/ipfs/QmdGrAGjJaDxdZC3vRs97S6scrSG1tdXzdoVMvdb2N5Vn5)
+The dist folder should hash to `QmW1YHCN1wogfxAHtPziPwXT4JFSka3cVPbJ6p23yDyAdj`, so you know you're accessing the code hosted here when you access it over a public IPFS gateway: [/ipfs/QmW1YHCN1wogfxAHtPziPwXT4JFSka3cVPbJ6p23yDyAdj](https://ipfs.carsonfarmer.com/ipfs/QmW1YHCN1wogfxAHtPziPwXT4JFSka3cVPbJ6p23yDyAdj)
 
 
 ## Install
